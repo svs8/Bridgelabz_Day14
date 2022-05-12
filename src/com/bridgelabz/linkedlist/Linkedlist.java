@@ -24,4 +24,11 @@ public class Linkedlist<T>{
 
         }
     }
+
+    public void add(T data) {
+        node<T> newnode=new node<>(data);
+        tail.next=newnode;
+        tail=newnode;
+
+    }
 }
