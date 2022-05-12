@@ -17,6 +17,16 @@ public class LinkedListmain {
         linkedlist1.add(30);
         linkedlist1.add(70);
         linkedlist1.display();
+        System.out.println();
+        System.out.println("====================");
+
+        Linkedlist linkedlist2=new Linkedlist();
+        linkedlist2.push(70);
+        linkedlist2.push(56);
+        linkedlist2.display();
+        System.out.println();
+        linkedlist2.insert(30);
+        linkedlist2.display();
 
 
 

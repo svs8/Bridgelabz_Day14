@@ -19,7 +19,7 @@ public class Linkedlist<T>{
     public void display() {
         node<T> temp=head;
         while(temp!=null){
-            System.out.print("-->"+temp.data);
+            System.out.print("->"+temp.data);
             temp=temp.next;
 
         }
@@ -30,5 +30,12 @@ public class Linkedlist<T>{
         tail.next=newnode;
         tail=newnode;
 
+    }
+
+    public void insert(T data) {
+        node<T> newNode= new node<>(data);
+        System.out.println("Number to be added between 70 and 56 is"+data);
+        head.next=newNode;
+        newNode.next=tail;
     }
 }
