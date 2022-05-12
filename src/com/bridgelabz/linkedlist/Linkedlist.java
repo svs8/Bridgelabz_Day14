@@ -34,8 +34,19 @@ public class Linkedlist<T>{
 
     public void insert(T data) {
         node<T> newNode= new node<>(data);
-        System.out.println("Number to be added between 70 and 56 is"+data);
         head.next=newNode;
         newNode.next=tail;
+        System.out.println("Number to be added between 70 and 56 is"+data);
+    }
+
+    public T pop(T data) {
+        node<T> newNode=new node<>(data);
+        node<T> poppedNode=head;
+        T element=poppedNode.data;
+        node<T> nextNode=poppedNode.next;
+        poppedNode.next=null;
+        poppedNode.data=null;
+        head=nextNode;
+        return element;
     }
 }

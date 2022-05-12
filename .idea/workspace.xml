@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3205210-5daf-479c-9c3a-9f367dddcd8b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListmain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListmain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/Linkedlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/Linkedlist.java" afterDir="false" />
     </list>
@@ -42,7 +41,7 @@
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.linkedlist.*" />
+          <option name="PATTERN" value="com.bridgelabz.linkedlist.LinkedListmain" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

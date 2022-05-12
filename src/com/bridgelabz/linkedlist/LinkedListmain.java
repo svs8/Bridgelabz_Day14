@@ -27,6 +27,22 @@ public class LinkedListmain {
         System.out.println();
         linkedlist2.insert(30);
         linkedlist2.display();
+        System.out.println();
+        System.out.println("====================");
+
+
+
+        Linkedlist linkedlist3=new Linkedlist();
+        linkedlist3.push(70);
+        linkedlist3.push(30);
+        linkedlist3.push(56);
+        linkedlist3.display();
+        Integer poppedElement= (Integer) linkedlist3.pop(70);
+        System.out.println();
+        System.out.println("The data removed is "+poppedElement);
+        linkedlist3.display();
+        System.out.println();
+        System.out.println("====================");
 
 
 
