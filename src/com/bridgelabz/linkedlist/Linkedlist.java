@@ -49,4 +49,17 @@ public class Linkedlist<T>{
         head=nextNode;
         return element;
     }
+
+    public T poplast(T data) {
+        node<T> newNode=new node<>(data);
+        node<T> poppedNode=tail;
+        T element=poppedNode.data;
+        node<T> previousNode=head.next;
+        poppedNode.data=null;
+        poppedNode.next=null;
+        tail=previousNode;
+        tail.next=null;
+        return element;
+    }
+
 }
