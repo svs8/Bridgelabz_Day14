@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3205210-5daf-479c-9c3a-9f367dddcd8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStructure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListmain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListmain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/Linkedlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/Linkedlist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Bridgelabz_coderepo/DataStructure"
   }
 }]]></component>
   <component name="RunManager">
@@ -45,7 +43,7 @@
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.linkedlist.*" />
+          <option name="PATTERN" value="com.bridgelabz.linkedlist.LinkedListmain" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,5 +78,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListmain.java</url>
+          <line>4</line>
+          <properties class="com.bridgelabz.linkedlist.LinkedListmain" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
