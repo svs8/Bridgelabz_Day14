@@ -63,8 +63,24 @@ public class LinkedListmain {
         linkedlist5.push(56);
         linkedlist5.display();
         System.out.println();
-        if(linkedlist5.search(70))
+        if(linkedlist5.search(30)) {
             System.out.println("And the Data is found");
+        }
+        else System.out.println("Searched Data not found");
+        System.out.println();
+        System.out.println("====================");
+
+        Linkedlist linkedlist6=new Linkedlist();
+        linkedlist6.push(70);
+        linkedlist6.push(30);
+        linkedlist6.push(56);
+        System.out.println("Before adding an node");
+        linkedlist6.display();
+        System.out.println();
+       linkedlist6.insertAfter(30,40);
+        System.out.println("After adding the node");
+        System.out.println();
+        linkedlist6.display();
         System.out.println();
         System.out.println("====================");
 

@@ -76,4 +76,19 @@ public class Linkedlist<T> {
         }
        return false;
     }
+
+    public void insertAfter(T searchData,T insertData) {
+        node<T> insertNode=new node<>(insertData);
+        node<T> searchedNode=new node<>(searchData);
+        node<T> temp=head;
+        while(temp!=null){
+            if(temp.data==searchData){
+                searchedNode=temp;
+                insertNode.next=searchedNode.next;
+                searchedNode.next=insertNode;
+                break;
+            }
+            temp=temp.next;
+        }
+    }
 }
