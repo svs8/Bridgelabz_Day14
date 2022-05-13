@@ -57,7 +57,16 @@ public class LinkedListmain {
         System.out.println();
         System.out.println("====================");
 
-
+        Linkedlist linkedlist5=new Linkedlist();
+        linkedlist5.push(70);
+        linkedlist5.push(30);
+        linkedlist5.push(56);
+        linkedlist5.display();
+        System.out.println();
+        if(linkedlist5.search(70))
+            System.out.println("And the Data is found");
+        System.out.println();
+        System.out.println("====================");
 
 
     }
