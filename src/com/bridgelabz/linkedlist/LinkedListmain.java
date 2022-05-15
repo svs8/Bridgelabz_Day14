@@ -50,9 +50,8 @@ public class LinkedListmain {
         linkedlist4.push(30);
         linkedlist4.push(56);
         linkedlist4.display();
-        Integer poppedElement1= (Integer) linkedlist4.poplast(70);
+        linkedlist4.poplast(70);
         System.out.println();
-        System.out.println("The data removed is "+poppedElement1);
         linkedlist4.display();
         System.out.println();
         System.out.println("====================");
@@ -83,6 +82,26 @@ public class LinkedListmain {
         linkedlist6.display();
         System.out.println();
         System.out.println("====================");
+
+        Linkedlist linkedlist7=new Linkedlist();
+        linkedlist7.push(70);
+        linkedlist7.push(40);
+        linkedlist7.push(30);
+        linkedlist7.push(56);
+        System.out.println("Before deleting the node");
+        linkedlist7.display();
+        System.out.println();
+        linkedlist7.searchanddelete(40);
+        System.out.println("After deleting the node");
+        System.out.println();
+        Integer size=linkedlist7.size();
+        System.out.println("Size of the linked list is: "+size);
+        System.out.println();
+        linkedlist7.display();
+        System.out.println();
+        System.out.println("====================");
+
+
 
 
     }

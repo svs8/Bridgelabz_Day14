@@ -40,8 +40,8 @@ public class Linkedlist<T> {
     }
 
     public T pop(T data) {
-        node<T> newNode = new node<>(data);
-        node<T> poppedNode = head;
+        node<T> poppedNode = new node<>(data);
+        poppedNode = head;
         T element = poppedNode.data;
         node<T> nextNode = poppedNode.next;
         poppedNode.next = null;
@@ -50,45 +50,75 @@ public class Linkedlist<T> {
         return element;
     }
 
-    public T poplast(T data) {
-        node<T> newNode = new node<>(data);
-        node<T> poppedNode = tail;
-        T element = poppedNode.data;
-        node<T> previousNode = head.next;
-        poppedNode.data = null;
+
+    public void poplast(T data) {
+        node<T> poppedNode = new node<>(data);
+        node<T> temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+        tail = temp;
+        System.out.println("The node deleted is" + poppedNode.data);
         poppedNode.next = null;
-        tail = previousNode;
-        tail.next = null;
-        return element;
+        poppedNode.data = null;
+
     }
+
 
     public boolean search(T searchData) {
         node<T> newNode = new node<>(searchData);
         node<T> temp = head;
-        T searchedData=null;
+        T searchedData = null;
         while (temp != null) {
             if (temp.data == newNode.data) {
-                searchedData=temp.data;
-                System.out.println("searched data is "+searchData);
+                searchedData = temp.data;
+                System.out.println("searched data is " + searchData);
                 return true;
             }
             temp = temp.next;
         }
-       return false;
+        return false;
     }
 
-    public void insertAfter(T searchData,T insertData) {
-        node<T> insertNode=new node<>(insertData);
-        node<T> searchedNode=new node<>(searchData);
-        node<T> temp=head;
-        while(temp!=null){
-            if(temp.data==searchData){
-                searchedNode=temp;
-                insertNode.next=searchedNode.next;
-                searchedNode.next=insertNode;
+    public void insertAfter(T searchData, T insertData) {
+        node<T> insertNode = new node<>(insertData);
+        node<T> searchedNode = new node<>(searchData);
+        node<T> temp = head;
+        while (temp != null) {
+            if (temp.data == searchData) {
+                searchedNode = temp;
+                insertNode.next = searchedNode.next;
+                searchedNode.next = insertNode;
                 break;
             }
-            temp=temp.next;
+            temp = temp.next;
         }
     }
+
+    public void searchanddelete(T searchData) {
+        node<T> searchedNode = new node<>(searchData);
+        node<T> temp = head;
+        node<T> prev = null;
+        while (temp != null) {
+            if (temp.data == searchedNode.data) {
+
+                prev.next = temp.next;
+            }
+            prev = temp;
+            temp = temp.next;
+        }
+    }
+
+    public int size() {
+        node<T> temp = head;
+        int count = 0;
+        while (temp != null) {
+            count = count + 1;
+            temp = temp.next;
+
+        }
+        return count;
+    }
+
 }
